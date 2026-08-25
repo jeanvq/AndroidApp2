@@ -29,22 +29,22 @@ This Android version was built to apply concepts explored in the **ListMaker tut
 ### Menu Screen
 Browse and order coffee products with automatic total calculation.
 
-![Menu Screen](screenshots/Screenshot_20260825_174933.png)
+<img src="screenshots/Screenshot_20260825_174933.png" alt="Menu Screen" width="260" />
 
 ### About Screen
 Learn about Origin & Ember's story, craft, and core values.
 
-![About Screen](screenshots/Screenshot_20260825_174950.png)
+<img src="screenshots/Screenshot_20260825_174950.png" alt="About Screen" width="260" />
 
 ### Contact Screen
 Find location, hours, contact info, and coffee class schedule.
 
-![Contact Screen](screenshots/Screenshot_20260825_175139.png)
+<img src="screenshots/Screenshot_20260825_175139.png" alt="Contact Screen" width="260" />
 
 ### Order Confirmation
 Order placed confirmation dialog.
 
-![Order Confirmation](screenshots/Screenshot_20260825_175152.png)
+<img src="screenshots/Screenshot_20260825_175152.png" alt="Order Confirmation" width="260" />
 
 ## Technologies Used
 
