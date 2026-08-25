@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Shared Origin & Ember palette used consistently across all Android Views. -->
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="espresso">#1C0F08</color>
+    <color name="copper">#BB703B</color>
+    <color name="cream">#FFF9F2</color>
+    <color name="card">#F1E9DF</color>
+    <color name="text_secondary">#6E625A</color>
+    <color name="divider">#D8CEC3</color>
 </resources>
