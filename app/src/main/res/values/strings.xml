@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">AndroidApp2</string>
+    <!-- App label shown by Android; project/repository remains AndroidApp2 as required. -->
+    <string name="app_name">Origin &amp; Ember</string>
 </resources>
