@@ -1,10 +1,10 @@
 # Origin & Ember Coffee Bar — AndroidApp2
 
-Origin & Ember Coffee Bar is an Android application developed in **Kotlin** using **Android Studio** and traditional **XML Views**. The project recreates the core functionality of the Origin & Ember coffee shop, allowing users to browse a menu, place orders, and learn about the business.
+Origin & Ember Coffee Bar is an Android application developed in **Kotlin** using **Android Studio** and traditional **XML Views**. The project recreates the core functionality of the Origin & Ember coffee shop experience for Android.
 
 ## About the Project
 
-The app represents a simple coffee shop ordering experience. Users can browse the menu, choose quantities, see the order total update automatically, place an order, learn about the coffee shop, and view contact information.
+The app represents a simple coffee shop ordering experience. Users can browse the menu, choose quantities, see the order total update automatically, place an order, learn about the coffee shop, and view contact details.
 
 This Android version was built to apply concepts explored in the **ListMaker tutorial**, including Android Views, Activities, event handling, navigation, and application state.
 
@@ -29,22 +29,22 @@ This Android version was built to apply concepts explored in the **ListMaker tut
 ### Menu Screen
 Browse and order coffee products with automatic total calculation.
 
-![Menu Screen](https://github.com/jeanvq/AndroidApp2/raw/main/screenshots/menu.png)
+![Menu Screen](screenshots/Screenshot_20260825_174933.png)
 
 ### About Screen
 Learn about Origin & Ember's story, craft, and core values.
 
-![About Screen](https://github.com/jeanvq/AndroidApp2/raw/main/screenshots/about.png)
+![About Screen](screenshots/Screenshot_20260825_174950.png)
 
 ### Contact Screen
 Find location, hours, contact info, and coffee class schedule.
 
-![Contact Screen](https://github.com/jeanvq/AndroidApp2/raw/main/screenshots/contact.png)
+![Contact Screen](screenshots/Screenshot_20260825_175139.png)
 
 ### Order Confirmation
 Order placed confirmation dialog.
 
-![Order Confirmation](https://github.com/jeanvq/AndroidApp2/raw/main/screenshots/order_confirmation.png)
+![Order Confirmation](screenshots/Screenshot_20260825_175152.png)
 
 ## Technologies Used
 
@@ -74,6 +74,7 @@ AndroidApp2/
 │   │       ├── colors.xml
 │   │       ├── strings.xml
 │   │       └── themes.xml
+│   │
 │   └── AndroidManifest.xml
 └── README.md
 ```
