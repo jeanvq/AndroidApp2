@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Contact screen mirrors ContactView.swift with Android-native map launching. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/cream">
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Find Us" android:textSize="30sp" android:textStyle="bold" android:textColor="@color/espresso" android:layout_marginBottom="16dp" />
+            <!-- Map-style location card preserves the location feature without requiring an API key. -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="180dp" android:gravity="center" android:orientation="vertical" android:background="@color/card" android:layout_marginBottom="22dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="⌖" android:textSize="42sp" android:textColor="@color/copper" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Downtown Waterloo" android:textSize="18sp" android:textStyle="bold" android:textColor="@color/espresso" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="43.4516, -80.4925" android:textColor="@color/text_secondary" />
+            </LinearLayout>
+            <!-- Same information blocks shown by the iOS Contact screen. -->
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="⌖  Address\n247 Roasters Street, Downtown\nWaterloo, ON" android:textSize="17sp" android:textColor="@color/espresso" android:lineSpacingExtra="4dp" android:paddingBottom="18dp" />
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/divider" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="◷  Hours\nMon–Fri: 6:30 AM – 7:00 PM\nSat–Sun: 7:00 AM – 8:00 PM" android:textSize="17sp" android:textColor="@color/espresso" android:lineSpacingExtra="4dp" android:paddingTop="18dp" android:paddingBottom="18dp" />
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/divider" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="✉  Email\nhello@originember.com" android:textSize="17sp" android:textColor="@color/espresso" android:paddingTop="18dp" android:paddingBottom="18dp" />
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/divider" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="☕  Coffee Classes\nEvery Saturday at 10:00 AM &amp; 2:00 PM" android:textSize="17sp" android:textColor="@color/espresso" android:paddingTop="18dp" android:paddingBottom="18dp" />
+            <!-- Android equivalent of Open in Apple Maps. -->
+            <Button android:id="@+id/openMapsButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Open in Maps" android:textColor="@color/white" android:backgroundTint="@color/copper" />
+        </LinearLayout>
+    </ScrollView>
+    <!-- Shared bottom navigation. -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="64dp" android:orientation="horizontal" android:background="@color/espresso" android:padding="6dp">
+        <Button android:id="@+id/menuButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="Menu" android:textColor="@color/white" />
+        <Button android:id="@+id/aboutButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="About" android:textColor="@color/white" />
+        <Button android:id="@+id/contactButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="Contact" android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>
