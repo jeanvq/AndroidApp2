@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+<!-- Main Menu screen: Android Views equivalent of the iOS Menu tab. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/cream">
+    <!-- Brand header keeps the Origin & Ember identity from iOS. -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="150dp" android:orientation="vertical" android:gravity="center" android:background="@color/espresso">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ORIGIN &amp; EMBER" android:textColor="@color/cream" android:textSize="28sp" android:textStyle="bold" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="COFFEE BAR" android:textColor="@color/copper" android:textSize="16sp" android:letterSpacing="0.18" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Our Menu" android:textColor="@color/white" android:textSize="14sp" android:layout_marginTop="10dp" />
+    </LinearLayout>
+    <!-- Kotlin populates this scrollable area with interactive menu cards. -->
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:fillViewport="true">
+        <LinearLayout android:id="@+id/menuContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingBottom="12dp" />
+    </ScrollView>
+    <!-- Conditional checkout section equivalent to the iOS total and Place Order button. -->
+    <LinearLayout android:id="@+id/totalSection" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="12dp" android:background="@color/white">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Total" android:textStyle="bold" android:textSize="18sp" android:textColor="@color/espresso" />
+            <TextView android:id="@+id/totalText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="$0.00" android:textStyle="bold" android:textSize="18sp" android:textColor="@color/copper" />
+        </LinearLayout>
+        <Button android:id="@+id/placeOrderButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Place Order" android:textColor="@color/white" android:backgroundTint="@color/copper" />
+    </LinearLayout>
+    <!-- Three-tab navigation mirrors ContentView.swift. -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="64dp" android:orientation="horizontal" android:background="@color/espresso" android:padding="6dp">
+        <Button android:id="@+id/menuButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="Menu" android:textColor="@color/white" />
+        <Button android:id="@+id/aboutButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="About" android:textColor="@color/white" />
+        <Button android:id="@+id/contactButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="Contact" android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>
