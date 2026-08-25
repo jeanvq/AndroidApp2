@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- About screen mirrors the story, craft, and values sections from AboutView.swift. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/cream">
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+            <!-- Hero area corresponding to the iOS splash image. -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="190dp" android:orientation="vertical" android:gravity="center" android:background="@color/espresso">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ORIGIN &amp; EMBER" android:textColor="@color/cream" android:textSize="28sp" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="COFFEE BAR" android:textColor="@color/copper" android:textSize="16sp" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Where origin meets ember." android:textColor="@color/copper" android:textSize="28sp" android:textStyle="bold" android:layout_marginBottom="22dp" />
+                <!-- Story content is intentionally the same as the iOS assignment. -->
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Our Story" android:textColor="@color/espresso" android:textSize="22sp" android:textStyle="bold" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Origin &amp; Ember started as a dream shared between two friends over countless late-night coffee conversations. Today, we're a neighborhood gathering place where exceptional coffee meets genuine human connection." android:textSize="16sp" android:textColor="@color/text_secondary" android:lineSpacingExtra="4dp" android:layout_marginBottom="22dp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Our Craft" android:textColor="@color/espresso" android:textSize="22sp" android:textStyle="bold" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Every cup tells a story of origin. We source directly from farmers who share our passion for quality, sustainability, and community. Our in-house roasting transforms each bean's unique character into something extraordinary." android:textSize="16sp" android:textColor="@color/text_secondary" android:lineSpacingExtra="4dp" android:layout_marginBottom="22dp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Our Values" android:textColor="@color/espresso" android:textSize="22sp" android:textStyle="bold" android:layout_marginBottom="10dp" />
+                <!-- Four cards reproduce the four iOS brand values. -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <TextView android:layout_width="0dp" android:layout_height="80dp" android:layout_weight="1" android:gravity="center" android:text="🌿\nSustainability" android:textStyle="bold" android:background="@color/card" android:layout_margin="4dp" />
+                    <TextView android:layout_width="0dp" android:layout_height="80dp" android:layout_weight="1" android:gravity="center" android:text="♥\nCommunity" android:textStyle="bold" android:background="@color/card" android:layout_margin="4dp" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <TextView android:layout_width="0dp" android:layout_height="80dp" android:layout_weight="1" android:gravity="center" android:text="★\nQuality" android:textStyle="bold" android:background="@color/card" android:layout_margin="4dp" />
+                    <TextView android:layout_width="0dp" android:layout_height="80dp" android:layout_weight="1" android:gravity="center" android:text="◎\nEthical Sourcing" android:textStyle="bold" android:background="@color/card" android:layout_margin="4dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <!-- Shared bottom navigation. -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="64dp" android:orientation="horizontal" android:background="@color/espresso" android:padding="6dp">
+        <Button android:id="@+id/menuButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="Menu" android:textColor="@color/white" />
+        <Button android:id="@+id/aboutButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="About" android:textColor="@color/white" />
+        <Button android:id="@+id/contactButton" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="Contact" android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>
