@@ -1,10 +1,10 @@
 # Origin & Ember Coffee Bar — AndroidApp2
 
-Origin & Ember Coffee Bar is an Android application developed in **Kotlin** using **Android Studio** and traditional **XML Views**. The project recreates the core functionality of the Origin & Ember iOS application as part of the Android Development course assignment.
+Origin & Ember Coffee Bar is an Android application developed in **Kotlin** using **Android Studio** and traditional **XML Views**. The project recreates the core functionality of the Origin & Ember coffee shop, allowing users to browse a menu, place orders, and learn about the business.
 
 ## About the Project
 
-The app represents a simple coffee shop ordering experience. Users can browse the menu, choose quantities, see the order total update automatically, place an order, learn about the coffee shop, and view contact/location information.
+The app represents a simple coffee shop ordering experience. Users can browse the menu, choose quantities, see the order total update automatically, place an order, learn about the coffee shop, and view contact information.
 
 This Android version was built to apply concepts explored in the **ListMaker tutorial**, including Android Views, Activities, event handling, navigation, and application state.
 
@@ -23,6 +23,28 @@ This Android version was built to apply concepts explored in the **ListMaker tut
 - **Open in Maps** button using an Android Intent
 - Bottom navigation between the three main Activities
 - Custom Origin & Ember visual theme
+
+## App Screenshots
+
+### Menu Screen
+Browse and order coffee products with automatic total calculation.
+
+![Menu Screen](https://github.com/jeanvq/AndroidApp2/raw/main/screenshots/menu.png)
+
+### About Screen
+Learn about Origin & Ember's story, craft, and core values.
+
+![About Screen](https://github.com/jeanvq/AndroidApp2/raw/main/screenshots/about.png)
+
+### Contact Screen
+Find location, hours, contact info, and coffee class schedule.
+
+![Contact Screen](https://github.com/jeanvq/AndroidApp2/raw/main/screenshots/contact.png)
+
+### Order Confirmation
+Order placed confirmation dialog.
+
+![Order Confirmation](https://github.com/jeanvq/AndroidApp2/raw/main/screenshots/order_confirmation.png)
 
 ## Technologies Used
 
@@ -70,7 +92,7 @@ git clone https://github.com/jeanvq/AndroidApp2.git
 
 ## Assignment Requirements
 
-This project was created to reproduce the features and functionality of the previous iOS application on Android. The source code includes comments explaining important application logic and UI sections, and the project is maintained using Git version control with GitHub as the remote repository.
+This project was created to reproduce the features and functionality of the previous iOS application on Android. The source code includes comments explaining important application logic and UI sections.
 
 ## Author
 
